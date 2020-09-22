@@ -1,0 +1,210 @@
+body {
+    font-family:verdana,helvetica,arial,sans-serif;
+    padding:20px;
+    padding-top:0px;
+    font-size:12px;
+    margin:0;
+}
+h2 {
+    font-size:18px;
+    font-weight:bold;
+    margin:0;
+    margin-bottom:15px;
+}
+.demo-info{
+	padding:0 0 12px 0;
+}
+.demo-tip{
+	display:none;
+}
+.label-top{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+.progress-bar-circle
+{
+	float:right;
+    font-size: 80%;
+    padding-top: 2%;
+    width: 30%;
+}
+
+
+#wrapper {
+    position: absolute;
+    left: 50%; top: 50%; /*move the object to the center of the parent object*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*these 5 settings change the base (or registration) point of the wrapper object to it's own center - so we align child center with parent center*/
+}
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  margin: 10px 0;
+}
+.image-wrapper img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.use-cover-background {
+  background-size: cover;
+  background-position: center;
+}
+.square {
+  margin: 10px 0;
+  width: 200px;
+  height: 200px;
+}
+button:focus {
+    outline: 0;
+}
+
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}
+.py-2 {
+    padding-bottom: 0rem!important;
+    padding-top: 0rem!important;
+}
+.px-3 {
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+}
+.container {
+	max-width: 100%;
+    width: 100%;
+    margin-right: 0px;
+}
+.navbar {
+    padding: 0rem;    
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 97%;
+}
+.btn-outline-secondary {
+    color: white;
+}
+.dropdown{
+	margin-top: 1px;
+}
+.dropdown-menu{
+	padding-top: 0rem;
+}
+.dropdown-menu li div{
+	padding-left: 1rem!important;
+    text-decoration: none;
+}
+.dropdown-menu li div a{
+	color: #333;
+}
+.dropdown-menu li div a:hover{
+	text-decoration: none;
+	color: #BA55D3;
+}
+.dropdown-menu li div:hover {
+	background-color: #ddd;
+}
+.dropdown-toggle{
+	height: 23px;
+    padding-top: 0px;
+    
+}
+.mt-2 {
+    margin-top: 0rem!important;
+}
+.time-work{
+	border-color: #868e96;
+}
+body input{
+	max-height: 25px;
+	min-height: 25px;
+}
+
+body .l-btn{
+	max-height: 25px;
+	min-height: 25px;
+}
+.easyui-accordion .card-body {
+    padding-top: 0.3rem;
+	padding-bottom: 0.2rem;
+}
+.easyui-accordion label {
+    display: inline-block;
+    margin-bottom: 0rem;
+    margin-top: 0.2rem;
+}
+@media (min-width: 1300px) {
+    .col-water-9 {
+        max-width: 66.6666666%;
+    }
+    .col-water-6 {
+        max-width: 50%;
+    }
+    .col-water-4 {
+        max-width: 33.3333332%;
+    }
+    .col-water-3 {
+        max-width: 25%;
+    }
+    .col-water-2 {
+        max-width: 16.66666666%;
+    }
+    .col-water-1 {
+        max-width: 8.333333332%;
+    }
+}
+.row{
+	max-width: 99%;
+}
+.datepicker {
+	width: 230px;
+}
+.date datepicker-water {
+    font-size: 14px;
+    padding-left: 15px;
+}
+.highcharts-credits{
+	display: none;
+}
+.highcharts-container {
+	/* border: 1px solid; */
+}
+.card-title, .card-text{
+	color: white;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

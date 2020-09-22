@@ -1,0 +1,17 @@
+<script>
+  // paramater
+  var proto = Object.create(HTMLElement.prototype);
+
+  proto.createdCallback = function() {
+	var prevfn = (this.getAttribute('prevfn') || '?');
+	var nextfn = (this.getAttribute('nextfn') || '?');
+	var waterid = (this.getAttribute('waterid') || '?');
+	var watername = (this.getAttribute('watername') || '?');
+	var waterurl = (this.getAttribute('waterurl') || '?');
+	var waterwidth = (this.getAttribute('waterwidth') || '?');
+	var waterclass = (this.getAttribute('waterclass') || '?');
+    this.innerHTML = '<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" class="'+waterclass+'"><tbody><tr><td><a href=\"javascript:;\" class=\"l-btn l-btn-small l-btn-plain\" onclick=\"'+prevfn+'\" style=\"background-color:#E6EFFF;\"><span class=\"l-btn-left l-btn-icon-left\"><span class=\"l-btn-text l-btn-empty\">&nbsp;</span><span class=\"l-btn-icon pagination-prev\">&nbsp;</span></span></a></td><td><input class=\"easyui-combobox\" id=\"'+waterid+'\" name=\"'+watername+'\" style=\"width:110px;height:auto;\"data-options=\"url:\''+waterurl+'\',method:\'get\',valueField:\'id\',textField:\'text\',panelMinHeight:100,panelMaxHeight:200,panelHeight:\'auto\'\"></td><td><a href=\"javascript:;\" class=\"l-btn l-btn-small l-btn-plain\" onclick=\"'+nextfn+'\" style=\"background-color:#E6EFFF;\"><span class=\"l-btn-left l-btn-icon-left\"><span class=\"l-btn-text l-btn-empty\">&nbsp;</span><span class=\"l-btn-icon pagination-next\">&nbsp;</span></span></a></td></tr></tbody></table>';
+  };
+
+  document.registerElement('water-combobox', {prototype: proto});
+</script>

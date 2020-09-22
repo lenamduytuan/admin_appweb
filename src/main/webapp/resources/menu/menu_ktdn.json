@@ -1,0 +1,46 @@
+[{
+	"id":1,
+	"text":"Kế Toán",
+	"children":[{
+		"id":11,
+		"text":"Hệ Thống",
+		"children":[{
+			"id":111,
+			"text":"Quản lý người dùng"
+		},{
+			"id":112,
+			"text":"Quản lý nhóm"
+		},{
+			"id":113,
+			"text":"Quản lý nhóm người dùng"
+		},{
+			"id":114,
+			"text":"Quản lý chức năng"
+		}]
+	},{
+		"id":12,
+		"text":"Danh Mục",
+		"children":[{
+			"id":121,
+			"text":"Danh mục tài khoản"
+		},{
+			"id":122,
+			"text":"Java"
+		},{
+			"id":123,
+			"text":"Microsoft Office"
+		},{
+			"id":124,
+			"text":"Games"
+		}]
+	},{
+		"id":13,
+		"text":"index.html"
+	},{
+		"id":14,
+		"text":"about.html"
+	},{
+		"id":15,
+		"text":"welcome.html"
+	}]
+}]
